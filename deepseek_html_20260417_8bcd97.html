@@ -484,7 +484,7 @@
     <div class="container">
       <div class="navbar">
         <div class="logo">
-          <h2>☕ Rincón a Café</h2>
+          <h2>Rincón a Café</h2>
           <p>panadería artesanal & especialidad</p>
         </div>
         <ul class="nav-links">
@@ -512,12 +512,12 @@
         </div>
         <div class="info-grid">
           <div class="card-info"><i class="fas fa-map-marker-alt"></i>
-            <h3>📍 Encuéntranos</h3>
+            <h3> Encuéntranos</h3>
             <p>Calle de la Panadería 45, Colonia Centro, Ciudad de México</p>
             <div class="map-responsive"><iframe src="https://maps.google.com/maps?q=Centro%2C%20Ciudad%20de%20M%C3%A9xico&t=&z=14&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe></div>
           </div>
           <div class="card-info"><i class="far fa-clock"></i>
-            <h3>🕒 Horario de atención</h3>
+            <h3> Horario de atención</h3>
             <p>Lunes a Viernes: 7:00 am - 9:30 pm<br>Sábado y Domingo: 8:00 am - 10:00 pm</p>
           </div>
         </div>
@@ -537,11 +537,11 @@
     <!-- MENÚ (6 productos por categoría) -->
     <section id="menu">
       <div class="container">
-        <h2 class="section-title">🍞 Nuestro menú artesanal</h2>
+        <h2 class="section-title"> Nuestro menú artesanal</h2>
         <div class="menu-tabs" id="menuTabs">
-          <button class="tab-btn active" data-category="pan">🥖 Panadería (6)</button>
-          <button class="tab-btn" data-category="bebidas">☕ Bebidas (6)</button>
-          <button class="tab-btn" data-category="postres">🍰 Postres (6)</button>
+          <button class="tab-btn active" data-category="pan"> Panadería </button>
+          <button class="tab-btn" data-category="bebidas"> Bebidas </button>
+          <button class="tab-btn" data-category="postres"> Postres </button>
         </div>
         <div id="productsContainer" class="products-grid"></div>
       </div>
@@ -550,7 +550,7 @@
     <!-- PEDIDO / CARRITO -->
     <section id="pedido">
       <div class="container">
-        <h2 class="section-title">🧾 Tu pedido</h2>
+        <h2 class="section-title"> orden </h2>
         <div class="cart-section" id="cartSection">
           <div id="cartItemsList" class="cart-items-list"></div>
           <div id="cartTotals" class="cart-totals"></div>
@@ -560,14 +560,14 @@
     </section>
   </main>
   <footer>
-    <p>🍞 Rincón a Café – Panadería & Cafetería | Hecho con amor y masa madre 🌾 | Síguenos en @rinconacafe</p>
+    <p> Rincón a Café – Panadería & Cafetería | Hecho con amor y masa madre  | Síguenos en @rinconacafe</p>
   </footer>
 
   <script>
     // ---------- PRODUCTOS: 6 PANES, 6 BEBIDAS, 6 POSTRES (imágenes web reales) ----------
     const PRODUCTS = {
       pan: [
-        { id: "p1", name: "Pan de Pueblo", price: 32, desc: "Corteza crujiente y miga esponjosa, fermentación natural. Perfecto para acompañar comidas.", img: "https://images.pexels.com/photos/5706470/pexels-photo-5706470.jpeg?auto=compress&cs=tinysrgb&w=400" },
+        { id: "p1", name: "Pan bolillo", price: 32, desc: "Corteza crujiente y miga esponjosa, fermentación natural. Perfecto para acompañar comidas.", img: "https://images.pexels.com/photos/5706470/pexels-photo-5706470.jpeg?auto=compress&cs=tinysrgb&w=400" },
         { id: "p2", name: "Pan Integral con Semillas", price: 38, desc: "Alta fibra, linaza, ajonjolí y girasol. Nutritivo y delicioso.", img: "https://images.pexels.com/photos/4967723/pexels-photo-4967723.jpeg?auto=compress&cs=tinysrgb&w=400" },
         { id: "p3", name: "Concha de Vainilla", price: 22, desc: "Tradicional pan mexicano, cubierta crujiente de azúcar y vainilla.", img: "https://images.pexels.com/photos/6911300/pexels-photo-6911300.jpeg?auto=compress&cs=tinysrgb&w=400" },
         { id: "p4", name: "Croissant Artesanal", price: 42, desc: "Hojaldre laminado a mano, mantequilla francesa, capas crujientes.", img: "https://images.pexels.com/photos/6334014/pexels-photo-6334014.jpeg?auto=compress&cs=tinysrgb&w=400" },
@@ -717,7 +717,7 @@
           if(cart.length === 0) { alert("🛒 El carrito está vacío. ¡Agrega productos deliciosos!"); return; }
           const subtotal = cart.reduce((acc,i) => acc + (i.price * i.quantity),0);
           const total = subtotal * 1.16;
-          alert(`✅ ¡Gracias por tu pedido, Rincón a Café! 🧾\nTotal: $${total.toFixed(2)} MXN\nTe esperamos para que disfrutes tu pedido.`);
+          alert(`¡Gracias por tu pedido, Rincón a Café! \nTotal: $${total.toFixed(2)} MXN\nTe esperamos para que disfrutes tu pedido.`);
           cart = [];
           saveCart();
           renderCart();
